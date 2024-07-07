@@ -15,6 +15,7 @@ app.get("/", (req, res) => {
 
 app.get("/trips", (req, res) => {
   let keywords = req.query.keywords;
+  console.log(keywords);
 
   if (keywords === undefined) {
     return res.status(400).json({
